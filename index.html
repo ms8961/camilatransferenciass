@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camila Transferencias</title>
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Iconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* 🔹 ROSA AVIOLETADO */
+:root{
+  --pink:#c45cff;
+  --pink-soft:#f3e6ff;
+  --pink-dark:#4b1b6b;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(180deg,#fbf7ff 0%,#f3ecff 100%);
+  color:#1c1c1c;
+  line-height:1.7;
+}
+
+a{text-decoration:none}
+
+/* MARCA */
+.watermark{
+  text-align:center;
+  font-size:13px;
+  padding:12px;
+  color:var(--pink-dark);
+  background:#fff;
+  border-bottom:3px solid var(--pink);
+  letter-spacing:1px;
+}
+
+/* CONTENEDOR */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+/* LOGO — ARREGLADO SIN CORTAR */
+.logo{
+  display:flex;
+  justify-content:center;
+  margin-bottom:25px;
+}
+
+.logo img{
+  max-width:160px;
+  height:auto;
+  padding:12px;
+  background:#fff;
+  border-radius:18px;
+  border:2px solid var(--pink);
+  box-shadow:0 8px 22px rgba(196,92,255,.28);
+}
+
+/* TITULOS */
+h1, h2, .faq summary{
+  font-family:'Playfair Display',serif;
+  letter-spacing:.5px;
+  color:var(--pink-dark);
+}
+
+h1{
+  font-size:38px;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+h2{
+  font-size:28px;
+  margin-bottom:18px;
+  text-align:center;
+}
+
+/* TEXTO */
+p{
+  color:#444;
+  font-size:16px;
+}
+
+/* BOTONES */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.btn{
+  padding:12px 22px;
+  border-radius:10px;
+  font-weight:600;
+  color:#fff;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.whatsapp{background:#25d366}
+.instagram{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.facebook{background:#1877f2}
+
+/* BLOQUES */
+.block{
+  background:#fff;
+  padding:38px;
+  border-radius:18px;
+  margin-bottom:55px;
+  box-shadow:0 12px 35px rgba(196,92,255,.18);
+  border-top:5px solid var(--pink);
+}
+
+/* DIVIDER */
+.divider{
+  width:60px;
+  height:4px;
+  background:var(--pink);
+  margin:25px auto;
+  border-radius:5px;
+}
+
+/* CAPTURAS */
+.capturas{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:25px;
+}
+
+.capturas img{
+  width:100%;
+  border-radius:14px;
+  border:1px solid #e1c9ff;
+  background:#fff;
+  padding:4px;
+}
+
+@media (min-width:768px){
+  .capturas{
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+}
+
+/* REFERENCIAS */
+.refs{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-top:30px;
+}
+
+.ref{
+  max-width:700px;
+  background:var(--pink-soft);
+  padding:18px 22px;
+  border-radius:16px;
+  border-left:5px solid var(--pink);
+}
+
+.ref p{
+  font-size:15px;
+  color:#4b1b6b;
+}
+
+.ref span{
+  display:block;
+  margin-top:8px;
+  font-size:13px;
+  color:#6a3b8a;
+}
+
+/* FAQ */
+.faq details{
+  padding:16px 0;
+  border-bottom:1px solid #e6d6ff;
+}
+
+.faq summary{
+  font-size:17px;
+  cursor:pointer;
+}
+
+.faq p{
+  margin-top:8px;
+  color:#555;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:22px;
+  font-size:13px;
+  color:var(--pink-dark);
+  border-top:3px solid var(--pink);
+  background:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="watermark">Camila Transferencias</div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="block">
+    <div class="logo">
+      <img src="logo.jpg" alt="Camila Transferencias">
+    </div>
+
+    <h1 class="titulo">CAMILA<br>TRANSFERENCIAS</h1>
+    <div class="divider"></div>
+
+    <p style=".titulo {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.1;
+  display: block;
+}">
+      Servicio de transferencias y gestión con atención personalizada,
+      comunicación clara y enfoque responsable.
+    </p>
+
+    <div class="buttons">
+      <a href="https://wa.me/3513399450" class="btn whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://instagram.com/camila.febrero" class="btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com/share/1BDDtBWY4r/?mibextid=wwXIfr" class="btn facebook">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+    </div>
+  </div>
+
+  <!-- EXPLICACION -->
+  <div class="block">
+    <h2>¿DE QUÉ SE TRATA?</h2>
+    <div class="divider"></div>
+
+    <p>
+       Somos un equipo de gestión de capital privado. Nos dedicamos a operar en los mercados financieros (trading, acciones, cripto) utilizando estrategias profesionales estudiadas para maximizar el rendimiento de tu dinero.
+
+Usted aporta el capital y nosotros ponemos el conocimiento, el tiempo y la estrategia para lograr obtener ganancia de ello. Nuestro modelo se basa en el beneficio mutuo: gestionamos tu inversión para generar rentabilidad y las ganancias se reparten entre ambas partes. Tu dinero trabaja para nosotros, nosotros lo hacemos crecer
+    </p>
+    <br>
+    <p>
+      La prioridad es la transparencia, la comunicación constante y el acompañamiento durante todo el proceso.
+      No se realizan promesas irreales ni se generan falsas expectativas.
+    </p>
+  </div>
+
+  <!-- CAPTURAS -->
+  <div class="block">
+    <h2>ALGUNAS DE NUESTRAS REFERENCIAS</h2>
+    <div class="divider"></div>
+
+    <div class="capturas">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+      <img src="img4.jpg">
+      <img src="img5.jpg">
+      <img src="img6.jpg">
+    </div>
+  </div>
+
+  <!-- TESTIMONIOS -->
+  <div class="block">
+    <h2>TESTIMONIOS</h2>
+    <div class="divider"></div>
+
+    <div class="refs">
+      <div class="ref">
+        <p>La verdad todo re claro desde el principio, me explicó cada paso y no hubo ningún problema.</p>
+        <span>— Martín Ledesma desde Facebook</span>
+      </div>
+
+      <div class="ref">
+        <p>La verdad que una genia camila, me salvó la vida, lit jaja.</p>
+        <span>— Lucía Tovares desde Facebook</span>
+      </div>
+
+      <div class="ref">
+        <p>Ya había consultado en otros lados y acá fue donde mejor me explicaron cómo funcionaba.</p>
+        <span>— Juan Pablo desde Facebook</span>
+      </div>
+
+      <div class="ref">
+        <p>Sin vueltas raras, me dijo cómo era y operamos, gracias.</p>
+        <span>— Nicolás Romero desde Facebook</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="block faq">
+    <h2>PREGUNTAS FRECUENTES</h2>
+    <div class="divider"></div>
+
+    <details>
+      <summary>¿Es seguro?</summary>
+      <p>Es totalmente seguro, pueden encontrar referencias en esta página y en nuestras redes.</p>
+    </details>
+
+    <details>
+      <summary>¿Puedo consultar antes?</summary>
+      <p>Obviamente que sí, todas las dudas se responden antes.</p>
+    </details>
+
+    <details>
+      <summary>¿Hay horarios de atención?</summary>
+      <p>Atendemos las 24hs del día.</p>
+    </details>
+
+    <details>
+      <summary>¿Cuánto demora la operación?</summary>
+      <p>Aproximadamente 60 minutos.</p>
+    </details>
+
+    <details>
+      <summary>¿Qué necesito para comenzar?</summary>
+      <p>Decidir el monto y contar con una cuenta bancaria o billetera virtual.</p>
+    </details>
+  </div>
+
+</div>
+
+<footer>
+  Camila Transferencias
+</footer>
+
+</body>
+</html>
+
+
