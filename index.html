@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -27,7 +28,7 @@
             --primary: #5b2fbf;
             --primary-dark: #2a114d;
             --primary-light: #8e6cd6;
-            --accent: #00d2ff; /* Un toque celeste para modernizar */
+            --accent: #00d2ff;
             
             --bg-body: #f8f9fc;
             --bg-card: #ffffff;
@@ -56,7 +57,7 @@
                               radial-gradient(at 100% 100%, rgba(0,210,255,0.05) 0px, transparent 50%);
             color: var(--text-main);
             line-height: 1.6;
-            padding-bottom: 100px; /* Espacio para barra flotante */
+            padding-bottom: 100px;
         }
 
         /* =========================
@@ -93,7 +94,7 @@
            LAYOUT
         ========================= */
         main {
-            max-width: 600px; /* Un poco más ancho para mejor lectura */
+            max-width: 600px;
             margin: 0 auto;
             padding: 30px 20px;
             display: flex;
@@ -219,7 +220,6 @@
         .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .btn-facebook { background: linear-gradient(135deg, #1877F2, #1659b1); }
 
-        /* Efecto de brillo en botones */
         .btn::before {
             content: '';
             position: absolute;
@@ -258,27 +258,30 @@
         }
 
         /* =========================
-           GALERÍA & REFERENCIAS
+           GALERÍA & REFERENCIAS (CORREGIDO)
         ========================= */
         .grid-gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 16px;
+            align-items: start; /* Alinea las imágenes arriba */
         }
 
         .grid-gallery img {
             width: 100%;
-            height: 150px; /* Altura uniforme */
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+            height: auto; /* Permite que la altura se ajuste a la captura */
+            display: block;
+            border-radius: 18px; /* Bordes más redondeados estilo celular */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            border: 1px solid #eee;
+            border: 4px solid #ffffff; /* Marco blanco estilo pantalla */
+            background: #fff;
         }
 
         .grid-gallery img:hover {
-            transform: scale(1.03);
+            transform: scale(1.02) translateY(-5px);
+            box-shadow: 0 15px 30px rgba(91, 47, 191, 0.15);
             z-index: 2;
         }
 
@@ -338,7 +341,6 @@
 
         summary:hover { color: var(--primary); }
 
-        /* Icono personalizado para el acordeón */
         summary::after {
             content: '+';
             font-weight: 300;
@@ -414,7 +416,6 @@
             transition: 0.3s;
         }
 
-        /* Colores activos en la barra */
         .dock-item:hover { color: var(--primary); background: rgba(91,47,191,0.05); }
         .dock-item.wa:hover i { color: #25D366; }
         .dock-item.ig:hover i { color: #cc2366; }
@@ -433,7 +434,8 @@
                 align-items: start;
             }
 
-            .grid-gallery { grid-template-columns: repeat(3, 1fr); }
+            /* En escritorio, 3 columnas para las capturas */
+            .grid-gallery { grid-template-columns: repeat(3, 1fr); gap: 24px; }
             
             .testimonial-grid { grid-template-columns: 1fr 1fr; }
 
@@ -604,10 +606,8 @@
     </nav>
 
     <script>
-        // Actualizar año automáticamente en el footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Animación de aparición al hacer scroll (Intersection Observer)
         const sections = document.querySelectorAll("section");
         
         const observer = new IntersectionObserver((entries) => {
