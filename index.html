@@ -19,7 +19,7 @@
 
     <style>
         /* =========================
-           VARIABLES & CONFIG
+            VARIABLES & CONFIG
         ========================= */
         :root {
             --primary: #5b2fbf;
@@ -58,7 +58,7 @@
         }
 
         /* =========================
-           HEADER (Glassmorphism)
+            HEADER (Glassmorphism)
         ========================= */
         header {
             background: var(--bg-glass);
@@ -88,7 +88,7 @@
         .brand i { font-size: 14px; }
 
         /* =========================
-           LAYOUT
+            LAYOUT
         ========================= */
         main {
             max-width: 600px;
@@ -130,7 +130,7 @@
         }
 
         /* =========================
-           HERO SECTION
+            HERO SECTION
         ========================= */
         .hero {
             text-align: center;
@@ -182,7 +182,7 @@
         }
 
         /* =========================
-           BOTONES
+            BOTONES
         ========================= */
         .action-buttons {
             display: flex;
@@ -214,7 +214,6 @@
         }
 
         .btn-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
-        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .btn-facebook { background: linear-gradient(135deg, #1877F2, #1659b1); }
 
         .btn::before {
@@ -228,7 +227,7 @@
         .btn:hover::before { left: 100%; }
 
         /* =========================
-           TEXTO Y CONTENIDO
+            TEXTO Y CONTENIDO
         ========================= */
         h2 {
             font-family: 'Playfair Display', serif;
@@ -255,7 +254,7 @@
         }
 
         /* =========================
-           GALERÍA & REFERENCIAS (CORREGIDO)
+            GALERÍA & REFERENCIAS (CORREGIDO)
         ========================= */
         .grid-gallery {
             display: grid;
@@ -283,7 +282,7 @@
         }
 
         /* =========================
-           TESTIMONIOS
+            TESTIMONIOS
         ========================= */
         .testimonial-grid {
             display: grid;
@@ -316,7 +315,7 @@
         .review-author i { font-size: 10px; }
 
         /* =========================
-           FAQ (ACORDEÓN)
+            FAQ (ACORDEÓN)
         ========================= */
         details {
             margin-bottom: 12px;
@@ -361,7 +360,7 @@
         }
 
         /* =========================
-           FOOTER
+            FOOTER
         ========================= */
         footer {
             text-align: center;
@@ -372,7 +371,7 @@
         }
 
         /* =========================
-           BARRA FLOTANTE (DOCK)
+            BARRA FLOTANTE (DOCK)
         ========================= */
         .dock-container {
             position: fixed;
@@ -415,14 +414,13 @@
 
         .dock-item:hover { color: var(--primary); background: rgba(91,47,191,0.05); }
         .dock-item.wa:hover i { color: #25D366; }
-        .dock-item.ig:hover i { color: #cc2366; }
         .dock-item.fb:hover i { color: #1877F2; }
 
         /* =========================
-           RESPONSIVE (DESKTOP)
+            RESPONSIVE (DESKTOP)
         ========================= */
         @media (min-width: 768px) {
-            main { gap: 60px; max-width: 1000px; } /* Ajustado para mejor visualización */
+            main { gap: 60px; max-width: 1000px; }
             
             .desktop-grid {
                 display: grid;
@@ -431,7 +429,6 @@
                 align-items: start;
             }
 
-            /* CAMBIO CLAVE: 4 columnas para que 20 imágenes queden exactas (4x5) */
             .grid-gallery { grid-template-columns: repeat(4, 1fr); gap: 16px; }
             
             .testimonial-grid { grid-template-columns: 1fr 1fr; }
@@ -465,9 +462,6 @@
             <div class="action-buttons">
                 <a href="https://wa.me/1130212181" class="btn btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> Iniciar Consulta
-                </a>
-                <a href="https://instagram.com/camila.operaciones" class="btn btn-instagram">
-                    <i class="fab fa-instagram"></i> Ver Resultados
                 </a>
             </div>
         </section>
@@ -572,7 +566,7 @@
 
                 <details>
                     <summary>¿Puedo consultar antes de invertir?</summary>
-                    <p>¡Por supuesto! Creemos que la información es clave. Respondemos todas tus dudas por WhatsApp o Instagram antes de que realices cualquier movimiento.</p>
+                    <p>¡Por supuesto! Creemos que la información es clave. Respondemos todas tus dudas por WhatsApp antes de que realices cualquier movimiento.</p>
                 </details>
 
                 <details>
@@ -603,10 +597,6 @@
         <a href="https://wa.me/1130212181" class="dock-item wa">
             <i class="fab fa-whatsapp"></i>
             <span>WhatsApp</span>
-        </a>
-        <a href="https://instagram.com/camila.operaciones" class="dock-item ig">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
         </a>
         <a href="https://www.facebook.com/share/1BDDtBWY4r/?mibextid=wwXIfr" class="dock-item fb">
             <i class="fab fa-facebook-f"></i>
