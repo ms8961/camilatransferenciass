@@ -89,31 +89,11 @@
         .ref-container img { height: 280px; border-radius: 20px; flex-shrink: 0; transition: 0.3s; border: 2px solid var(--glass-border); filter: brightness(0.9); }
         .ref-container img:hover { border-color: var(--accent); filter: brightness(1.1); }
 
-        .testi-grid { 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-}
-.testi-card { 
-    background: rgba(255, 255, 255, 0.05); /* Fondo cristal */
-    padding: 25px; 
-    border-radius: 20px; 
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
-}
-.testi-card p { 
-    font-style: italic; 
-    margin-bottom: 15px; 
-    font-size: 0.95rem; 
-    color: white; /* Texto siempre blanco */
-}
-.author { 
-    font-weight: 700; 
-    color: var(--accent); /* El celeste de tu logo */
-    font-size: 0.9rem; 
-    display: flex; 
-    align-items: center; 
-    gap: 8px; 
-}
+        /* Testimonios */
+        .testi-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .testi-card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid var(--glass-border); }
+        .testi-card p { font-style: italic; margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted); }
+        .author { font-weight: 700; color: var(--accent); font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
 
         /* FAQ */
         details { border-bottom: 1px solid var(--glass-border); padding: 18px 5px; cursor: pointer; }
@@ -244,77 +224,25 @@
             
             <div class="testi-grid">
                 <div class="testi-card">
-                    <div class="testi-grid">
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Excelente atención, Camila me sacó todas las dudas antes de empezar. El proceso fue tal cual lo pactado."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Martín Ledesma
-        </div>
-    </div>
+                    <p>"Excelente atención, Camila me sacó todas las dudas antes de empezar. El proceso fue tal cual lo pactado."</p>
+                    <div class="author"><i class="fab fa-facebook"></i> Martín Ledesma</div>
+                </div>
 
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Impresionante la rapidez. En menos de una hora ya tenía todo resuelto. Genia total."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Lucía Tovares
-        </div>
-    </div>
+                <div class="testi-card">
+                    <p>"Impresionante la rapidez. En menos de una hora ya tenía todo resuelto. Genia total."</p>
+                    <div class="author"><i class="fab fa-facebook"></i> Lucía Tovares</div>
+                </div>
 
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Buscaba seriedad y la encontré acá. Muy profesional el manejo del capital."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Juan Pablo
-        </div>
-    </div>
+                <div class="testi-card">
+                    <p>"Buscaba seriedad y la encontré acá. Muy profesional el manejo del capital."</p>
+                    <div class="author"><i class="fab fa-facebook"></i> Juan Pablo</div>
+                </div>
 
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Estoy muy contenta con Camila, me ayudó bastante con la gestión de mis activos."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Sofia Dominguez
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Al principio tenía dudas, pero la transparencia de Camila te da mucha seguridad. Ya vamos por la tercera operación."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Franco Spinelli
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Muy conforme con el rendimiento. Es difícil encontrar gente seria en esto y acá se nota el profesionalismo."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Valentina Ríos
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"La atención personalizada es un 10. Siempre responden rápido y los pagos llegan en el tiempo acordado."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Matías Castro
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Súper transparente todo. Me pasaron los comprobantes de cada movimiento. Muy recomendable para arrancar."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Agustina Herrera
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 20px; color: #ffffff;">"Lo que más destaco es la paciencia para explicar. No sabía nada de trading y Camila me guio en todo el proceso."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Facundo Ortiz
-        </div>
-    </div>
-
-    <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--shadow);">
-        <p style="font-style: italic; margin-bottom: 2te0px; color: #ffffff;">"Cumplieron con los tiempos pactados a la perfección. Es un servicio serio y con resultados reales desde el primer día."</p>
-        <div style="font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 8px;">
-            <i class="fab fa-facebook"></i> Marina Solís
-        </div>
-    </div>
-</div>
+                <div class="testi-card">
+                    <p>"Al principio tenía dudas, pero la transparencia de Camila te da mucha seguridad. Ya vamos por la tercera operación."</p>
+                    <div class="author"><i class="fab fa-facebook"></i> Franco Spinelli</div>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -322,7 +250,7 @@
             <div class="divider"></div>
             <details>
                 <summary>¿Cuál es el capital mínimo?</summary>
-                <p>El monto minimo es de $20,000. Escribinos para recibir la tabla de rendimientos.</p>
+                <p>Podés iniciar con el monto que te sientas cómodo. Escribinos para recibir la tabla de rendimientos sugerida.</p>
             </details>
             <details>
                 <summary>¿Es seguro operar?</summary>
@@ -340,7 +268,7 @@
     </main>
 
     <nav class="dock">
-        <a href="https://wa.me/1130212181" class="dock-item"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a href="https://wa.me/3515609153" class="dock-item"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
         <a href="#" class="dock-item"><i class="fa-solid fa-circle-check"></i><span>Garantía</span></a>
         <a href="#" class="dock-item"><i class="fa-solid fa-user-tie"></i><span>Invertir</span></a>
     </nav>
